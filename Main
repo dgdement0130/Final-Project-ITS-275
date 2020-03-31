@@ -1,0 +1,23 @@
+package project;
+ 
+public class Main {
+		public static void main (String[] args) {
+			
+			System.out.println("Welcome to the Mortgage Calculation App!"); 
+			System.out.println("\nWe will need some information from you to determine your eligibility.");
+			final double income = 250000; //constant used for statement below + future need - remains unchanged
+				System.out.println("\nWhat is your estimated yearly income: $" + income);
+			double rate = 4.366; //variable used to display the number shown w/o error
+				System.out.println("\nWhat is your desired interest rate: " + rate + " % ");
+			int credit = input.nextInt(); //assigning value to variable - gives error on 'input'
+				System.out.println("\nEnter your current credit score: " + credit );
+			
+			if (
+				credit >= 760
+				)
+				System.out.println("Congratulations! You are approved for a 3.54% interest rate based off your information! ");
+			else 
+				System.out.println("We are currently reviewing your submission and will contact you with further details.");
+				
+	}
+}
