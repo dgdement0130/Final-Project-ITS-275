@@ -16,8 +16,11 @@ public class Main {
 				credit >= 760
 				)
 				System.out.println("Congratulations! You are approved for a 3.54% interest rate based off your information! ");
-			else 
-				System.out.println("We are currently reviewing your submission and will contact you with further details.");
-				
+			if (
+				credit <= 759
+				)
+				System.out.println("Congratulations! You are approved for either a 3.762% or 4.153% interest rate! ");
+			else; 
+				System.out.println("Sorry! We are unable to process your submission and will be in contact soon!");
 	}
 }
