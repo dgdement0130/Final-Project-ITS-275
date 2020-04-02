@@ -1,6 +1,6 @@
 package project;
  
-public class Main {
+public class Main { //will be where we "showcase" a basic template of how other classes will function
 		public static void main (String[] args) {
 			
 			System.out.println("Welcome to the Mortgage Calculation App!"); 
