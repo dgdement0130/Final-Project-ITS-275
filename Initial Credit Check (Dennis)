@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+
+
+public class CreditScoreCalculator {
+
+	
+
+	public static void main(String[] args) {
+
+		
+
+		int Num1,Num2,Num3,Result;  //Variables
+
+		
+
+		Scanner in = new Scanner(System.in);
+
+		
+
+		System.out.println("Enter your credit scores ");
+
+		System.out.println("Experian: ");
+
+		Num1 = in.nextInt();  //Enter Experian credit score
+
+		System.out.println("TransUnion: ");
+
+		Num2 = in.nextInt();  //Enter TransUnion credit score
+
+		System.out.println("Equifax: ");
+
+		Num3 = in.nextInt();  //Enter Equifax credit score
+
+		Result = ((Num1 + Num2 + Num3) / 3);  //Determines the average of 3 scores
+
+		
+
+		System.out.println("Your credit score average is: " + Result);  //Displays the average
+
+		
+
+		if (Result < 580)  //If-else statement to determine if buyer is eligible for loan
+
+		
+
+		System.out.println("You do not qualify for a home loan at this time");
+
+		
+
+		else
+
+			System.out.println("Congratulations! you qualify for a home loan");
+
+	}
+
+}
