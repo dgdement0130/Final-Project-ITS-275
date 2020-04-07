@@ -1,0 +1,39 @@
+package project;
+import java.util.Scanner;
+public class CustomerInformation { //code written by Daniel
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int choice; 
+		choice = in.nextInt(); 
+		
+		System.out.println("Enter a number between 1-4 to start the program: " + in.nextInt());
+	
+		
+			
+	switch(choice) // correlating info for case 1-4 will display when user inputs number in print statement
+		{
+		case 1: 
+			int name = in.nextInt(); //variable is assigned to user input
+			System.out.println("You have selected choice 1! May I ask what is your name?" + in.nextInt());
+			System.out.println("Hello " + name + "!");
+			break;
+		case 2:
+			int income = in.nextInt(); //variable is assigned to user input 
+			System.out.println("You have selected choice 2! Please enter your yearly income: $ " + in.nextInt());
+			System.out.println("Thank you! We have stored the following for future reference: $ " + income);
+			break;
+		case 3:
+			int age = in.nextInt(); //assigns the variable to what the user inputs
+			System.out.println("You have selected choice 3! Please enter your age: " + in.nextInt());
+			System.out.println("You have entered: " + age + "as your age");
+			break;
+		case 4:
+			int loanyears = in.nextInt(); //assigns variable to user input
+			System.out.println("You have selected choice 4! How long are you wanting your loan to be (in years)? " + in.nextInt());
+			System.out.println("You have entered: " + loanyears + "as the amount of years you wish your loan to be");
+		default:
+			System.out.println("Sorry! That was an invalid choice. Try again!"); //occurs if invalid number is chosen
+		}
+	}
+}
