@@ -1,13 +1,13 @@
 package project; // Main class written by Daniel
- 
+import java.util.Scanner; //scanner class - requirement 1
 public class Main { //will be where we "showcase" a basic template of how other classes will function
 		public static void main (String[] args) {
 			
-			System.out.println("Welcome to the Mortgage Calculation App!"); 
+			System.out.println("Welcome to the Mortgage Calculation App!");  //1/2 of requirement 19 - println and printf
 			System.out.println("\nWe will need some information from you to determine your eligibility.");
-			final double income = 250000; //constant used for statement below + future need - remains unchanged
+			final double income = 250000; //constant (req. 3) used for statement below + future need - remains unchanged 
 				System.out.println("\nWhat is your estimated yearly income: $" + income);
-			double rate = 4.366; //variable used to display the number shown w/o error
+			double rate = 4.366; //variable (req. 2) used to display the number shown w/o error
 				System.out.println("\nWhat is your desired interest rate: " + rate + " % ");
 			int credit = input.nextInt(); //assigning value to variable - gives error on 'input'
 				System.out.println("\nEnter your current credit score: " + credit );
@@ -17,7 +17,7 @@ public class Main { //will be where we "showcase" a basic template of how other 
 				)
 				System.out.println("Congratulations! You are approved for a 3.54% interest rate based off your information! ");
 			if (
-				credit <= 759
+				credit >= 650
 				)
 				System.out.println("Congratulations! You are approved for either a 3.762% or 4.153% interest rate! ");
 			else; 
