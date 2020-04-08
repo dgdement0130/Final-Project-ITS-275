@@ -11,7 +11,7 @@ public class CustomerInformation { //code written by Daniel
 	
 		
 			
-	switch(choice) // correlating info for case 1-4 will display when user inputs number in print statement
+	switch(choice) //req.4 - switch; correlating info for case 1-4 will display when user inputs number in print statement
 		{
 		case 1: 
 			int name = in.nextInt(); //variable is assigned to user input
