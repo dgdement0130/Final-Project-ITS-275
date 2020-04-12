@@ -3,7 +3,7 @@ Checklist
 •	Variables - Done
 •	Constants - Done
 •	Switch Statement - Done
-•	Conditional operator
+•	Conditional operator - Done
 •	Using this keyword
 •	Inheritance
 •	Abstract Classes
@@ -12,14 +12,15 @@ Checklist
 •	Method overriding - Done
 •	Method overloading
 •	Arrays
-•	Constructor
-•	Super keyword
+•	Constructor - Done
+•	Super keyword - Done
 •	Exception handling
 •	Encapsulation
 •	Using Java library class such as Date, Random etc
 •	Println, printf methods - Done (Println)
-•	Static variable and Static methods
+•	Static variable and Static methods - Done (Static method)
 •	JavaFX
 •	Recursion
 •	*Choose 20 out of the 22*
-Completed: 5.5/22
+Completed: 9/22
+**Bold text is for requirements not completely done**
