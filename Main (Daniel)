@@ -1,45 +1,96 @@
 package project; // Main class written by Daniel
+
 import java.util.Scanner; //scanner class - requirement 1
+
 public class Main { //will be where we "showcase" a basic template of how other classes will function
+
 		public static void main (String[] args) {
+
 			Scanner one = new Scanner(System.in);
+
 			System.out.println("Welcome to the Mortgage Calculation App!");  //1/2 of requirement 19 - println and printf
+
 			System.out.println("\nWe will need some information from you to determine your eligibility.");
+
 			final double income = 250000; //constant (req. 3) used for statement below + future need - remains unchanged 
+
 				System.out.println("\nWhat is your estimated yearly income: $" + income);
+
 			double rate = 4.366; //variable (req. 2) used to display the number shown w/o error
+
 				System.out.println("\nWhat is your desired interest rate: " + rate + " % ");
-			int credit = input.nextInt(); //assigning value to variable - gives error on 'input'
+
+			int credit = one.nextInt(); //assigning value to variable - gives error on 'input'
+
 				System.out.println("\nEnter your current credit score: " + credit );
+
 			if (
+
 				credit >= 760
+
 				)
+
 				System.out.println("Congratulations! You are approved for a 3.54% interest rate based off your information! ");
+
 			if (
+
 				credit >= 650
+
 				)
+
 				System.out.println("Congratulations! You are approved for either a 3.762% or 4.153% interest rate! ");
+
 			else; 
+
 				System.out.println("Sorry! We are unable to process your submission and will be in contact soon!");
+
 	}
+
 class House{
+	
+	Scanner two = new Scanner(System.in);
+	
 	public void type() {
+
 		System.out.println("This will be a loan for an average sized house.");
+
 	}
+
 }
+
 class Features extends House{
+
 	public void options(){
+
 		System.out.println("I want a screened in porch.");
+
 	}
+
 	Features(){
+
 		super();
+
 		System.out.println("Screened in porch selection saved."); //using super keyword to call 'House' class constructor req. 15
+
 	}
+
 	public void type(){
+
 		System.out.println("I want to look at other options."); //lines 25-35(method overriding) - req. 11
+
 }
-System.out.println("With my current budget, can this house be an option?");
+
+System.out.println("With my current budget, can this house be an option?");//gives error on period after 'out' and parentheses and ';' at end
+
+
 String price;
-	int budget = 250000 , house = one.next();
+
+	int budget = 250000 , house = two.nextInt();
+			{
+	
 	price = budget==house ? "Yes":"No"; //conditional operator using input from user to determine if price meets budget req. 5
+
 	System.out.println("Ans: "+ price);
+		}
+	}
+}
