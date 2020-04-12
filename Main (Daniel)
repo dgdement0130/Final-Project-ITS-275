@@ -11,7 +11,6 @@ public class Main { //will be where we "showcase" a basic template of how other 
 				System.out.println("\nWhat is your desired interest rate: " + rate + " % ");
 			int credit = input.nextInt(); //assigning value to variable - gives error on 'input'
 				System.out.println("\nEnter your current credit score: " + credit );
-			
 			if (
 				credit >= 760
 				)
@@ -23,4 +22,16 @@ public class Main { //will be where we "showcase" a basic template of how other 
 			else; 
 				System.out.println("Sorry! We are unable to process your submission and will be in contact soon!");
 	}
+class House{
+	public void type() {
+		System.out.println("This will be a loan for an average sized house.");
+	}
+}
+class Features extends House{
+	public void options(){
+		System.out.println("I want a screened in porch.");
+	}
+	public void type(){
+		System.out.println("I want to look at other options."); //lines 25-35(method overriding) - req. 11
+	
 }
