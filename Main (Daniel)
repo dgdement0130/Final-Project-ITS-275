@@ -2,7 +2,7 @@ package project; // Main class written by Daniel
 import java.util.Scanner; //scanner class - requirement 1
 public class Main { //will be where we "showcase" a basic template of how other classes will function
 		public static void main (String[] args) {
-			
+			Scanner one = new Scanner(System.in);
 			System.out.println("Welcome to the Mortgage Calculation App!");  //1/2 of requirement 19 - println and printf
 			System.out.println("\nWe will need some information from you to determine your eligibility.");
 			final double income = 250000; //constant (req. 3) used for statement below + future need - remains unchanged 
@@ -31,7 +31,15 @@ class Features extends House{
 	public void options(){
 		System.out.println("I want a screened in porch.");
 	}
+	Features(){
+		super();
+		System.out.println("Screened in porch selection saved."); //using super keyword to call 'House' class constructor req. 15
+	}
 	public void type(){
 		System.out.println("I want to look at other options."); //lines 25-35(method overriding) - req. 11
-	
 }
+System.out.println("With my current budget, can this house be an option?");
+String price;
+	int budget = 250000 , house = one.next();
+	price = budget==house ? "Yes":"No"; //conditional operator using input from user to determine if price meets budget req. 5
+	System.out.println("Ans: "+ price);
